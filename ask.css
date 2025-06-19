@@ -1,0 +1,79 @@
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.logo-img img{width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px 0;
+    object-fit: cover;}
+.track-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px 0;
+    object-fit: cover;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+audio {
+    margin-top: 15px;
+    width: 100%;
+}
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+
+#trackname {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #f0f0f0; 
+        
+}
+.progress-container {
+    width: 100%;
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+}
